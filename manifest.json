@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Boost Button",
+    "version": "1.0",
+    "description": "Adds a 'boost' button to LinkedIn posts in the feed",
+    "permissions": ["activeTab", "https://www.linkedin.com/feed/"],
+    "content_scripts": [{
+        "matches": ["https://www.linkedin.com/feed/*"],
+        "js": ["content.js"]
+    }],
+    "icons": { "48": "icon.png" }
+}
